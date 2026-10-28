@@ -41,19 +41,24 @@ nav {
   gap: 20px;
 }
 
+nav a {
+  padding: 5px;
+}
+
 .logo {
-  padding: 10px;
+  padding: 25px 50px;
   font-weight: 600;
   background: white;
   flex: 0 0 auto;
 }
 
-ul {
+nav ul {
   display: flex;
   margin: 0;
   gap: 2rem;
   margin-left: auto;
   padding-left: 0;
+  font-size: 16px;
 }
 
 li {
@@ -63,7 +68,6 @@ li {
 a {
   color: inherit;
   text-decoration: none;
-  padding: 5px;
 }
 
 a:hover,
@@ -108,4 +112,44 @@ img {
   padding: 5px 20px;
   font-weight: 600;
   border-radius: 4px;
+}
+
+footer {
+  background: #bdc1b6;
+}
+
+.columns-container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.columns-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 0;
+}
+
+.contact-container a {
+  text-decoration: underline;
+}
+
+.trademark-container {
+  border-top: 1px solid black;
+}
+
+.trademark-container p {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+/* media queries */
+@media (max-width: 767px) {
+  .columns-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 }
