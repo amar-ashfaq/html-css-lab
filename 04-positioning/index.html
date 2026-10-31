@@ -10,14 +10,24 @@
     <header>
       <nav>
         <span class="logo">Logo</span>
-        <ul>
+        <ul id="dropdownMenu">
           <li><a href="#">Home</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <a href="#" class="quote-btn">Get a quote</a>
+        <button
+          id="hamburgerMenu"
+          class="btn-mobile-menu"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <span type="button" class="icon-open">☰</span>
+          <span type="button" class="icon-close">✕</span>
+        </button>
       </nav>
     </header>
+
     <main>
       <section>
         <h2>First Heading</h2>
@@ -199,5 +209,6 @@
         <p>© 2026 Acme Builders</p>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
