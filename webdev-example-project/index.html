@@ -12,21 +12,22 @@
     <header>
       <nav>
         <span class="logo">Logo</span>
+        <button
+          id="hamburgerMenu"
+          class="btn-mobile-menu"
+          type="button"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <span class="icon-open">☰</span>
+          <span class="icon-close">✕</span>
+        </button>
         <ul id="dropdownMenu">
           <li><a href="#">Home</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <a href="#" class="quote-btn">Get a quote</a>
-        <button
-          id="hamburgerMenu"
-          class="btn-mobile-menu"
-          aria-label="Menu"
-          aria-expanded="false"
-        >
-          <span type="button" class="icon-open">☰</span>
-          <span type="button" class="icon-close">✕</span>
-        </button>
       </nav>
     </header>
 
@@ -71,7 +72,19 @@
         <h2>Second Heading</h2>
 
         <div class="img-container">
-          <img src="./images/NiceLoft.jpg" alt="Nice Loft" />
+          <img
+            src="./images/nice-loft-1024.webp"
+            width="1024"
+            height="768"
+            alt="Nice Loft"
+            srcset="
+              ./images/nice-loft-480.webp   480w,
+              ./images/nice-loft-768.webp   768w,
+              ./images/nice-loft-1024.webp 1024w
+            "
+            sizes="(min-width: 517px) 467px,
+                   calc(100vw - 50px)"
+          />
           <div class="img-overlay">
             <h3 class="img-caption">A Beautiful Safe Haven</h3>
           </div>
@@ -170,6 +183,155 @@
           assumenda veritatis maxime unde beatae reiciendis dolorum nemo ex
           aperiam in fuga cumque, nam sequi enim adipisci nesciunt quis? Eaque.
         </p>
+      </section>
+      <section>
+        <h2>Our projects</h2>
+        <ul class="project-cards-container">
+          <li>
+            <article class="project-card">
+              <img
+                src="./images/house-extension-960.webp"
+                alt="Living Room and Garden Extension"
+                width="960"
+                height="1200"
+              />
+              <h3>Moseley - House extension that will truly amaze everyone</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+                rerum veritatis enim numquam. Explicabo dignissimos in tempora
+                ipsa voluptate quas quibusdam aperiam, repellat labore nisi
+                similique quasi perferendis ea repellendus.
+              </p>
+              <a href="#">View Moseley House extension</a>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <img
+                src="./images/craftsmanship-960.webp"
+                alt="Craftsmanship"
+                width="960"
+                height="721"
+              />
+              <h3>Moseley - House extension</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                architecto itaque ex, ipsam laudantium nam. Pariatur dolorum
+                iure qui mollitia ipsam, modi assumenda! Atque molestiae eveniet
+                tempora voluptatibus maxime quos? Nostrum, corporis dolorem
+                numquam laudantium cupiditate ab dignissimos vero impedit id
+                deserunt velit ea non explicabo aspernatur tempore? Porro
+                officiis voluptatem tempore consectetur ab similique pariatur
+                minus fugit optio culpa!
+              </p>
+              <a href="#">View Moseley House extension</a>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <img
+                src="./images/bedroom-renovation-960.webp"
+                alt="Bedroom Renovation"
+                width="960"
+                height="1280"
+              />
+              <h3>Moseley - House extension</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tempora in nostrum saepe harum eius quidem fuga iusto culpa,
+                cupiditate maiores nisi laudantium illo id asperiores quasi?
+                Doloremque odio necessitatibus eaque. Totam vitae sint
+                voluptatum et non officiis dolorum animi minus tenetur expedita
+                voluptas cupiditate quis ut dolore minima consectetur nisi enim,
+                unde mollitia natus? Non iste perspiciatis eligendi dolorum
+                nobis. Doloribus cumque molestias nam quas veritatis corporis
+                officiis molestiae ex eligendi quis rem odio illo non minima
+                vero nesciunt alias nemo ipsum dolor ipsam voluptate, fuga totam
+                quos accusamus. Aliquid.
+              </p>
+              <a href="#">View Moseley House extension</a>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <img
+                src="./images/humble-beginnings-960.webp"
+                alt="Completed home project"
+                width="960"
+                height="721"
+              />
+              <h3>Moseley - House extension</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                quibusdam. Dolorum maiores voluptatem expedita accusamus modi,
+                nulla architecto vitae mollitia enim cumque! Voluptate ratione
+                beatae quae minima deleniti fugiat eum? Voluptatibus placeat
+                molestias, illo nulla aut saepe ab perferendis reiciendis,
+                soluta sequi inventore quis, consectetur velit dolores nihil
+                unde ipsa enim culpa hic illum dolor esse eligendi. Accusantium,
+                nisi ex?
+              </p>
+              <a href="#">View Moseley House extension</a>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <img
+                src="./images/kitchen-renovation-960.webp"
+                alt="Kitchen Renovation"
+                width="960"
+                height="743"
+              />
+              <h3>Moseley - House extension</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+                rerum veritatis enim numquam. Explicabo dignissimos in tempora
+                ipsa voluptate quas quibusdam aperiam, repellat labore nisi
+                similique quasi perferendis ea repellendus.
+              </p>
+              <a href="#">View Moseley House extension</a>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <img
+                src="./images/lasting-promise-960.webp"
+                alt="Lasting promise"
+                width="960"
+                height="721"
+              />
+              <h3>Moseley - House extension</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+                itaque quam autem tenetur ea officia provident quisquam, vero
+                praesentium excepturi, iure delectus eius aliquid deserunt sunt
+                officiis nobis quaerat id. Earum vel dolores aspernatur eos
+                fugiat recusandae quia natus, beatae quibusdam sunt libero? Aut
+                minima dolore qui. Repellat, porro eos. Optio iusto doloribus
+                fugit ipsa? Libero neque veritatis qui nobis.
+              </p>
+              <a href="#">View Moseley House extension</a>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <img
+                src="./images/living-room-renovation-960.webp"
+                alt="Living room renovation"
+                width="960"
+                height="1234"
+              />
+              <h3>Moseley - House extension</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+                rerum veritatis enim numquam. Explicabo dignissimos in tempora
+                ipsa voluptate quas quibusdam aperiam, repellat labore nisi
+                similique quasi perferendis ea repellendus.
+              </p>
+              <a href="#">View Moseley House extension</a>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
     <!-- Site Footer -->

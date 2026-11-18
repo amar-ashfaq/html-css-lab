@@ -1,0 +1,126 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  background: blue;
+  width: 100%;
+  padding: 25px;
+  color: red;
+  font-weight: 700;
+}
+
+.badge {
+  position: absolute;
+  padding: 4px 8px;
+  top: 8px;
+  right: 8px;
+  background: white;
+  border-radius: 2px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  color: blue;
+}
+
+main {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  block-size: auto;
+}
+
+.img-container {
+  position: relative;
+  max-inline-size: 467px;
+}
+
+.img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 60%);
+}
+
+.img-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: whitesmoke;
+  width: 90%;
+}
+
+.project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 20px;
+  padding-left: 0;
+}
+
+.project-cards-container li,
+.project-cards-container li article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+}
+
+.project-card {
+  background: #dfe2da;
+  padding: 20px;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+  h3,
+  p {
+    margin: 0;
+    line-height: 25px;
+  }
+}
+
+.project-card img {
+  max-inline-size: 100%;
+  object-fit: cover;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 5px 5px gray;
+}
+
+.project-card a {
+  padding: 15px 20px;
+  font-size: 0.875rem;
+  background-color: #bdc1b6;
+  font-weight: 600;
+  border-radius: 4px;
+  text-align: center;
+  justify-self: start;
+}
+
+.project-card a:hover,
+.project-card a:focus-visible {
+  background: #343434;
+  color: white;
+}

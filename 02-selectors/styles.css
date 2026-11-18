@@ -8,3 +8,17 @@ li a,
 .cta {
   color: red;
 }
+
+.btn,
+.link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  color: red !important;
+}
+#main .btn {
+  color: blue;
+}
