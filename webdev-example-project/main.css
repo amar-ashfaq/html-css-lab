@@ -1,6 +1,15 @@
+:root {
+  --custom-green-background: #dfe2da;
+  --project-card-link-background: #bdc1b6;
+  --quote-btn-background: rgb(228, 112, 77);
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  min-block-size: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 *,
@@ -12,7 +21,7 @@ body {
 .card {
   position: relative;
   background: blue;
-  width: 100%;
+  inline-size: 100%;
   padding: 25px;
   color: red;
   font-weight: 700;
@@ -42,13 +51,13 @@ a:focus-visible {
 }
 
 main {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-inline-start: 25px;
+  padding-inline-end: 25px;
 }
 
 .img-container img {
   display: block;
-  width: 100%;
+  inline-size: 100%;
   block-size: auto;
 }
 
@@ -71,14 +80,14 @@ main {
   transform: translate(-50%, -50%);
   text-align: center;
   color: whitesmoke;
-  width: 90%;
+  inline-size: 90%;
 }
 
 .project-cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 20px;
-  padding-left: 0;
+  padding-inline-start: 0;
 }
 
 .project-cards-container li,
@@ -89,7 +98,7 @@ main {
 }
 
 .project-card {
-  background: #dfe2da;
+  background: var(--custom-green-background);
   padding: 20px;
   gap: 25px;
   h3,
@@ -110,7 +119,7 @@ main {
 .project-card a {
   padding: 15px 20px;
   font-size: 0.875rem;
-  background-color: #bdc1b6;
+  background-color: var(--project-card-link-background);
   font-weight: 600;
   border-radius: 4px;
   text-align: center;

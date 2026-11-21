@@ -1,5 +1,5 @@
 header {
-  background: #bdc1b6;
+  background: var(--custom-green-background);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -31,7 +31,7 @@ nav ul {
   right: 0;
   left: 0;
   margin: 0;
-  padding-left: 0;
+  padding-inline-start: 0;
   font-size: 16px;
 }
 
@@ -52,9 +52,9 @@ nav ul.is-open {
   padding: 12px 14px;
   border: 0;
   font-weight: bold;
-  margin-left: auto;
-  min-width: 2.75rem;
-  min-height: 2.75rem;
+  margin-inline-start: auto;
+  min-inline-size: 2.75rem;
+  min-block-size: 2.75rem;
 }
 
 .btn-mobile-menu:hover {
@@ -67,7 +67,7 @@ nav ul.is-open {
   padding: 10px;
   font-size: 14px;
   white-space: nowrap;
-  background-color: rgb(228, 112, 77);
+  background-color: var(--quote-btn-background);
   font-weight: 600;
   border-radius: 4px;
 }
@@ -104,7 +104,7 @@ nav ul a:focus-visible {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin-left: auto;
+    margin-inline-start: auto;
     position: static;
     background: none;
   }

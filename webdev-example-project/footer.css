@@ -1,5 +1,5 @@
 footer {
-  background: #bdc1b6;
+  background: var(--custom-green-background);
 }
 
 .columns-container {
@@ -10,14 +10,14 @@ footer {
 }
 
 .columns-container h2 {
-  margin-top: 0;
+  margin-block-start: 0;
 }
 
 .columns-container ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-left: 0;
+  padding-inline-start: 0;
   margin: 0;
 }
 
